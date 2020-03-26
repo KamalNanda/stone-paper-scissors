@@ -1,0 +1,96 @@
+body{
+    padding: 0;
+    margin:0;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(./assets/back.jpg);
+    background-size: cover;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+@font-face {
+    font-family: 'billabongregular';
+    src: url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot");
+    src: url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.eot?#iefix") format('embedded-opentype'), url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.woff") format('woff'), url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.ttf") format('truetype'), url("https://cdn.rawgit.com/milktronics/beaglegr.am/master/public/fonts/billabong-webfont.svg#billabongregular") format('svg');
+    font-weight: normal;
+    font-style: normal;
+   }
+   h1 {
+    font-family: billabong, 'billabongregular';
+    text-align: center;
+    font-weight: 100;
+    font-size:4rem;
+    margin: 2rem 0;
+    color: white;
+    text-decoration: none;
+    padding-top: 10px;
+   }
+#start-btn{
+    left: 43%;
+    top: 22%;  
+}
+.btns{
+    position: absolute;
+    background-color: rgb(243, 214, 209);
+}
+.btns:hover{
+    cursor: pointer;
+}
+#WINS{
+    margin-left: 47%;
+    bottom:17%;
+}
+#finalResult{
+    left: 43%;
+    top:45%
+}
+header{
+    background-color: rgb(248, 112, 88);
+    margin: -2rem;
+}   
+.game-container-main{
+    display: flex;
+    width: 70%;
+    height: 600px;
+    margin-left: 15%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+.game-container{
+    width: 50%;
+    background-color: rgb(228, 228, 228) ;
+    text-align: center;
+}
+#game-container-right{
+    background-color: white;
+}
+#game-container-left{
+    background-color: rgb(228, 228, 228) ;
+}
+.hand-container{
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    border: 1px solid black;
+}
+.hand-select{
+    width: 100px;
+    height: 100px;
+
+}
+.hand-select img{
+    width: 100%;
+}
+.hand-select-container{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.hand-select:hover{
+    transform: translateY(-20px);
+}

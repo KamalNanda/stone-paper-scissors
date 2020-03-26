@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./static/index.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>STONE PAPER SCISSORS</h1>
+    </header>
+    <h2 id="start-btn" onclick="restart()" class="btns">RESTART</h2>
+    <h2 id="WINS" class="btns">RES</h2>
+    <h2 id="finalResult" class="btns"></h2>
+    <div class="game-container-main">
+        <div id="game-container-left" class="game-container">
+            <h3>CPU - <span id="cpu-point">0</span></h3>
+            <div class="hand-container">
+                <img src="./static/assets/cContainer.png" width="200px" height="200px" id="cpu-hand-container" />
+            </div>
+        </div>
+        <div id="game-container-right" class="game-container">
+            <h3>PLAYER - <span id="player-point">0</span></h3>
+            <div class="hand-container" >
+                <img src="./static/assets/pContainer.png" width="200px" height="200px" id="player-hand-container" />
+            </div>
+            <div class="hand-select-container">
+                <div class="hand-select" id="stone" onclick="handSelect(this.id)">
+                    <img src="./static/assets/stone.png" />
+                </div>
+                <div class="hand-select" id="paper" onclick="handSelect(this.id)">
+                    <img src="./static/assets/paper.png" />
+                </div>
+                <div class="hand-select" id="scissors" onclick="handSelect(this.id)">
+                    <img src="./static/assets/scissors.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="./static/index.js"></script>
+</body>
+</html>

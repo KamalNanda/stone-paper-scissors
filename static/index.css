@@ -76,6 +76,9 @@ header{
     margin-top: 80px;
     border: 1px solid black;
 }
+.hand-container img{
+	width:100%;
+}
 .hand-select{
     width: 100px;
     height: 100px;
@@ -93,4 +96,48 @@ header{
 }
 .hand-select:hover{
     transform: translateY(-20px);
+}
+@media (max-width: 768px){
+	header h1{
+		font-size: 2rem;
+	}
+	body{
+		height: 120vh
+	}
+	.game-container-main{
+		width:80%;
+		flex-direction: column;
+		margin: auto;
+		margin-bottom: 80px;
+	}
+	.game-container{
+		width: 100%;
+		margin: 30px auto 40px auto;
+	}
+	.game-container h3{
+		margin:0 !important
+	}
+	#game-container-left{
+		height: 200px;
+		display: inline-table
+	}
+	.hand-container{
+		width: 100px;
+		height:100px;
+		margin-top: 20px;
+	}
+	.hand-select-container{
+		margin-top: 20px
+	}
+	#start-btn {
+		left: 25%;
+		top: 77% !important;
+	}
+	#WINS{
+		bottom:51% !important;
+		margin-left:40%;
+	}
+	.btns{
+		height: 55px
+	}
 }
